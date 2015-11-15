@@ -51,13 +51,11 @@ function goRow() {
 //     alert("You need to play fast!");
 //   }
 // }, 3000);
-var parent = document.getElementById("divc");
-var child = document.getElementById("table1");
 
-setTimeout(function(){ 
-document.getElementById("myTable").deleteRow(0);
-  
-}, 3000);
+
+var myTimer = setInterval(function(){ 
+    document.getElementById("myTable").deleteRow(0);   
+}, 5000);
 
 
 
