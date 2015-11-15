@@ -35,8 +35,29 @@ function goRow() {
     var cell4 = row.insertCell(3);
     cell1.innerHTML = "NEW CELL1";
     cell2.innerHTML = "NEW CELL2";
+    cell3.innerHTML = "New cell3";
+    cell4.innerHTML = "new cell4";
 }
 
 
 // //function to add row
+
+
+
+// var secondsCount = 0;
+
+// setTimeout(function() {
+//   if(secondsCount === 0) {
+//     alert("You need to play fast!");
+//   }
+// }, 3000);
+var parent = document.getElementById("divc");
+var child = document.getElementById("table1");
+
+setTimeout(function(){ 
+document.getElementById("myTable").deleteRow(0);
+  
+}, 3000);
+
+
 
