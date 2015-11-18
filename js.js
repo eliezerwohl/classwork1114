@@ -28,17 +28,20 @@ function goRow() {
     var cell3 = row.insertCell(2);
     var cell4 = row.insertCell(3);
     cell1.innerHTML = document.getElementById("firstName").value;
-    cell2.innerHTML = "NEW CELL2";
-    cell3.innerHTML = "New cell3";
-    cell4.innerHTML = "new cell4";
+    cell2.innerHTML = document.getElementById("lastName").value;
+    cell3.innerHTML = document.getElementById("email").value;
+    cell4.innerHTML = " ";
+    if (firstName.value === lastName.value) {
+      prompt('ja');
+    };
 }
 
 
 
-var myTimer = setInterval(function()
-{ 
-    document.getElementById("myTable").deleteRow(1);   
-}, 10000);
+// var myTimer = setInterval(function()
+// { 
+//     document.getElementById("myTable").deleteRow(1);   
+// }, 10000);
 
 
 
