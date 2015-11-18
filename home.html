@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container" id="divc"> 
-    <table id="myTable" class="table" id= "myTable">
+    <table id="myTable" class="table">
       <tr>
         <th>first name </th>
         <th>last name</th>
@@ -29,11 +29,28 @@
         <td> <button type="button" class="warning delete-btn">X</button></td>
       </tr>
       <tr>
-       <td><div class="form-group"> <label for="exampleInputEmail1">add row </label> <input type="email" class="form-control" id="exampleInputEmail1" placeholder="placeholder"> </div> </td>
-       <td> <button type="button" class="warning add-row"> + </button> </td>
-      </tr> 
-      
+        <td>  
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="John">
+          </div>
+        </td>
         <td>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="McLastname">
+          </div>
+        <td> 
+          <div class="form-group">
+           <label for="email">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+          </div>
+        </td>
+        <td> 
+          <button type="button" id="goRow" class="warning"> + </button> 
+        </td>
+      </tr> 
+  
         
     </table>
 
