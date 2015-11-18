@@ -16,11 +16,24 @@ function deleteRecord(){
 
 
 
-document.getElementById("goRow").addEventListener("click", goRow)
+document.getElementById("goRow").addEventListener("click", check)
+
+
+function check () {
+    if (document.getElementById("firstName").value == document.getElementById("lastName").value){
+        prompt('First name can not be last');
+    }
+
+    else { newRow()
+    
+
+}
+
+    }
 
 
 
-function goRow() {
+        function newRow() {
     var table = document.getElementById("myTable");
     var row = table.insertRow(1);
     var cell1 = row.insertCell(0);
@@ -31,11 +44,7 @@ function goRow() {
     cell2.innerHTML = document.getElementById("lastName").value;
     cell3.innerHTML = document.getElementById("email").value;
     cell4.innerHTML = " ";
-    if (firstName.value === lastName.value) {
-      prompt('ja');
-    };
 }
-
 
 
 // var myTimer = setInterval(function()
