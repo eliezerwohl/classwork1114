@@ -20,16 +20,29 @@ document.getElementById("goRow").addEventListener("click", check)
 
 
 function check () {
-    if (document.getElementById("firstName").value == document.getElementById("lastName").value){
-        prompt('First name can not be last');
+    if (document.getElementById("firstName").value == 0){
+        prompt('you didn not enter a first name');
+    }
+   
+  if (document.getElementById("lastName").value == 0) {
+        prompt("you didn't enter a last name!");
     }
 
-    else { newRow()
-    
+    if (document.getElementById("email").value == 0) {
+        prompt("hey! enter a email!");
+    }
 
+
+
+   
+
+    else { newRow()
 }
 
     }
+
+
+
 
 
 
