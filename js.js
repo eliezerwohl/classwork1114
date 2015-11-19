@@ -16,11 +16,37 @@ function deleteRecord(){
 
 
 
-document.getElementById("goRow").addEventListener("click", goRow)
+document.getElementById("goRow").addEventListener("click", check)
+
+
+function check () {
+    if (document.getElementById("firstName").value == 0){
+        prompt('you didn not enter a first name');
+    }
+   
+  if (document.getElementById("lastName").value == 0) {
+        prompt("you didn't enter a last name!");
+    }
+
+    if (document.getElementById("email").value == 0) {
+        prompt("hey! enter a email!");
+    }
 
 
 
-function goRow() {
+   
+
+    else { newRow()
+}
+
+    }
+
+
+
+
+
+
+        function newRow() {
     var table = document.getElementById("myTable");
     var row = table.insertRow(1);
     var cell1 = row.insertCell(0);
@@ -28,17 +54,16 @@ function goRow() {
     var cell3 = row.insertCell(2);
     var cell4 = row.insertCell(3);
     cell1.innerHTML = document.getElementById("firstName").value;
-    cell2.innerHTML = "NEW CELL2";
-    cell3.innerHTML = "New cell3";
-    cell4.innerHTML = "new cell4";
+    cell2.innerHTML = document.getElementById("lastName").value;
+    cell3.innerHTML = document.getElementById("email").value;
+    cell4.innerHTML = " ";
 }
 
 
-
-var myTimer = setInterval(function()
-{ 
-    document.getElementById("myTable").deleteRow(1);   
-}, 10000);
+// var myTimer = setInterval(function()
+// { 
+//     document.getElementById("myTable").deleteRow(1);   
+// }, 10000);
 
 
 
